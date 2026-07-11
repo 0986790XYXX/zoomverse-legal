@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zoomverse — Infinite-zoom art</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="logo"></div>
+  <h1>Zoomverse</h1>
+  <p class="tag" data-i="tag">Draw an endless world. The deeper you dive, the bigger it gets.</p>
+  <a class="cta soon" href="#" data-i="soon">Coming soon to the App Store</a>
+</header>
+<div class="wrap">
+  <div class="features">
+    <div class="feature"><h3 data-i="f1t">Truly infinite</h3><p data-i="f1b">Your doodle becomes an endless tunnel — dive into the center forever, no seams, no bottom.</p></div>
+    <div class="feature"><h3 data-i="f2t">Draw at any depth</h3><p data-i="f2b">Vector strokes stay crisp at every zoom level. Layers, pressure, symmetry and pro brushes.</p></div>
+    <div class="feature"><h3 data-i="f3t">Made to share</h3><p data-i="f3b">Export a seamless looping zoom video, perfect for social feeds.</p></div>
+    <div class="feature"><h3 data-i="f4t">Nine themes</h3><p data-i="f4b">One switch recolors the whole app and canvas — pure darks and clean lights.</p></div>
+  </div>
+</div>
+<footer>
+  <div>
+    <a href="privacy.html" data-i="privacy">Privacy Policy</a>·
+    <a href="terms.html" data-i="terms">Terms of Use</a>·
+    <a href="mailto:support@douhouse.com" data-i="contact">Contact</a>
+  </div>
+  <p style="margin-top:12px">© 2026 Zoomverse</p>
+</footer>
+<script>
+const zh = {
+  tag: "画一个无限世界。潜得越深，世界越大。",
+  soon: "即将登陆 App Store",
+  f1t: "真正无限", f1b: "你的涂鸦变成无尽隧道——一直潜入中心，无缝、无底。",
+  f2t: "任意深度作画", f2b: "矢量笔触在任何缩放层级都清晰。图层、压感、对称与高级笔刷。",
+  f3t: "为分享而生", f3b: "导出无缝循环的缩放视频，完美适配社交平台。",
+  f4t: "九套主题", f4b: "一键换肤，整个 App 与画布同时变色——纯净的深色与干净的浅色。",
+  privacy: "隐私政策", terms: "用户协议", contact: "联系我们"
+};
+if ((navigator.language || "en").toLowerCase().startsWith("zh")) {
+  document.documentElement.lang = "zh";
+  document.querySelectorAll("[data-i]").forEach(el => { const k = el.getAttribute("data-i"); if (zh[k]) el.textContent = zh[k]; });
+  document.title = "Zoomverse — 无限缩放艺术";
+}
+</script>
+</body>
+</html>

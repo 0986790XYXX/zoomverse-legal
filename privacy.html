@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zoomverse — Privacy Policy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap legal">
+  <a class="back" href="index.html">← Zoomverse</a>
+  <h1 data-i="title">Privacy Policy</h1>
+  <p class="updated" data-i="updated">Last updated: July 2026</p>
+  <div id="en">
+    <p>Zoomverse respects and protects your privacy.</p>
+    <h2>1. Data storage</h2>
+    <p>Every canvas and artwork you create is stored only on this device. We do not upload, collect, or share your creative content with any third party.</p>
+    <h2>2. What we don't collect</h2>
+    <p>The app requires no account and collects no personal information such as your name, email, location, or contacts.</p>
+    <h2>3. System permissions</h2>
+    <p>When you share a piece, the system share sheet is used; your artwork is handed only to the target app you choose, at the moment you share.</p>
+    <h2>4. Children's privacy</h2>
+    <p>The app is suitable for all ages, contains no targeted ads, and collects no personal information from children.</p>
+    <h2>5. Contact</h2>
+    <p>For any privacy questions, contact: <a href="mailto:support@douhouse.com">support@douhouse.com</a></p>
+  </div>
+</div>
+<footer>© 2026 Zoomverse · <a href="mailto:support@douhouse.com">support@douhouse.com</a></footer>
+<script>
+if ((navigator.language || "en").toLowerCase().startsWith("zh")) {
+  document.documentElement.lang = "zh";
+  document.title = "Zoomverse — 隐私政策";
+  document.querySelector("[data-i='title']").textContent = "隐私政策";
+  document.querySelector("[data-i='updated']").textContent = "最近更新：2026 年 7 月";
+  document.getElementById("en").innerHTML = `
+    <p>Zoomverse 尊重并保护您的隐私。</p>
+    <h2>1. 数据存储</h2>
+    <p>您创作的所有画布与作品仅保存在本设备本地，我们不会上传、收集或与第三方共享您的创作内容。</p>
+    <h2>2. 我们不收集的信息</h2>
+    <p>本应用不需要账号，不收集您的姓名、邮箱、位置或通讯录等个人信息。</p>
+    <h2>3. 系统权限</h2>
+    <p>分享作品时会调用系统分享面板，作品数据仅在您主动分享的那一刻交给您选择的目标应用。</p>
+    <h2>4. 儿童隐私</h2>
+    <p>本应用适合所有年龄段，不含定向广告，不收集儿童个人信息。</p>
+    <h2>5. 联系我们</h2>
+    <p>如对隐私有任何疑问，请联系：<a href="mailto:support@douhouse.com">support@douhouse.com</a></p>`;
+}
+</script>
+</body>
+</html>
